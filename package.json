@@ -1,7 +1,7 @@
 {
   "name": "tinder-for-movies",
   "version": "0.1.0",
-  "homepage": "https://milan-960.github.io/Tinder-Movies",
+  "homepage": "https://milan-960.github.io/tinder-movies",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
