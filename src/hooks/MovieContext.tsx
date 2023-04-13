@@ -16,6 +16,7 @@ interface MovieContextValue {
   rejectMovie: () => void;
 }
 
+// movie context created
 export const MovieContext = createContext<MovieContextValue>({
   movies: [],
   currentMovie: null,
