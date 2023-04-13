@@ -9,7 +9,7 @@ function App() {
     <>
       <div className="App">
         <header className="App-header">
-          <h1>Tinder for Movies!!</h1>
+          <h1>Welcome to Tinder for Movies</h1>
         </header>
       </div>
 
