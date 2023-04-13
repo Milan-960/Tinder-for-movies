@@ -1,6 +1,8 @@
-import "./App.css";
 import MovieRecommendation from "./components/MovieRecommendation";
 import { MovieContextProvider } from "./hooks/MovieContext";
+import "./App.css";
+import "./styles/MovieCard.css";
+import "./styles/MovieRecommendation.css";
 
 function App() {
   return (

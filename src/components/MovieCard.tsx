@@ -1,6 +1,3 @@
-// MovieCard.tsx
-import "./MovieCard.css";
-
 interface MovieCardProps {
   id: string;
   imageURL: string;
