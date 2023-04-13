@@ -2,7 +2,6 @@ import React, { useContext, useState } from "react";
 import { useSwipeable } from "react-swipeable";
 import { MovieContext } from "../hooks/MovieContext";
 import MovieCard from "./MovieCard";
-import "./MovieRecommendation.css";
 
 const MovieRecommendation: React.FC = () => {
   const { currentMovie, acceptMovie, rejectMovie } = useContext(MovieContext);
@@ -31,7 +30,7 @@ const MovieRecommendation: React.FC = () => {
   });
 
   return (
-    <div className="movie-recommendation">
+    <div className="movie-recommendation" data-testid="movie-recommendation">
       {currentMovie ? (
         <>
           <div {...handlers} style={transformStyle}>
