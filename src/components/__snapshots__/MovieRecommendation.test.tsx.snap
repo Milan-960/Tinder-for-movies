@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MovieRecommendation renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="movie-recommendation"
+    data-testid="movie-recommendation"
+  >
+    <p>
+      No More Movies!
+    </p>
+  </div>
+</DocumentFragment>
+`;
