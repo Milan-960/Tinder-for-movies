@@ -27,11 +27,11 @@ const MovieCard: React.FC<MovieCardProps> = ({
         <h3>Movie: {title}</h3>
         <p>{summary}</p>
         <div className="movie-actions">
-          <button className="reject-button" onClick={onReject}>
-            ❌ Reject
-          </button>
           <button className="accept-button" onClick={onAccept}>
             ✔️ Accept
+          </button>
+          <button className="reject-button" onClick={onReject}>
+            ❌ Reject
           </button>
         </div>
       </div>
