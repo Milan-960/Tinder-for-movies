@@ -1,0 +1,6 @@
+.movie-recommendation {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 1rem;
+}
