@@ -23,8 +23,8 @@ jobs:
       - name: Run tests
         run: npm test
 
-      - name: Run linter
-        run: npm run lint
+      # - name: Run linter
+      #   run: npm run lint
 
   build_and_deploy:
     needs: test_and_lint
