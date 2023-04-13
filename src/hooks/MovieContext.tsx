@@ -84,10 +84,13 @@ export const MovieContextProvider: React.FC<MovieContextProviderProps> = ({
   //     }
   //   };
 
-  useEffect(() => {
-    const fetchMovies = async () => {
-      const response = await axios.get("https://swapi.dev/api/films/");
-      const films = response.data.results.map((film: any, index: number) => ({
+  const fetchMovies = async (): Promise<void> => {
+    const response = await axios.get<{ results: Record<string, any>[] }>(
+      "https://swapi.dev/api/films/"
+    );
+
+    const films: Movie[] = response.data.results.map(
+      (film: Record<string, any>, index: number) => ({
         id: String(index + 1),
         imageURL: `https://starwars-visualguide.com/assets/img/films/${
           index + 1
@@ -95,10 +98,14 @@ export const MovieContextProvider: React.FC<MovieContextProviderProps> = ({
         title: film.title,
         summary: film.opening_crawl,
         rating: film.episode_id,
-      }));
-      setMovies(films);
-      setCurrentMovie(films[0]);
-    };
+      })
+    );
+
+    setMovies(films);
+    setCurrentMovie(films[0]);
+  };
+
+  useEffect(() => {
     fetchMovies();
   }, []);
 
